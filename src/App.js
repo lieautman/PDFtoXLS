@@ -1,7 +1,7 @@
-import PDFViewer from "./PDFViewer/PDFViewer";
+import PDFtoXLS from "./PDFtoXLS/PDFtoXLS";
 
 function App() {
-  return <PDFViewer />;
+  return <PDFtoXLS />;
 }
 
 export default App;

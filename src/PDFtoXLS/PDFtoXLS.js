@@ -49,7 +49,7 @@ function extractText(event) {
     .catch((error) => console.error("Text extraction failed", error));
 }
 
-function PDFViewer() {
+function PDFtoXLS() {
   return (
     <div className="App">
       <header className="App-header">
@@ -63,4 +63,4 @@ function PDFViewer() {
   );
 }
 
-export default PDFViewer;
+export default PDFtoXLS;
