@@ -3,7 +3,8 @@ import * as FileSaver from "file-saver";
 import * as XLSX from "xlsx";
 
 function extractText(event) {
-  event.target.files.foreach((file) => {
+  for (let i = 0; i < event.target.files.length; i++) {
+    let file = event.target.files.item(i);
     pdfToText(file)
       .then((text) => {
         //all text from PDF document
@@ -45,11 +46,13 @@ function extractText(event) {
           const data = new Blob([excelBuffer], { type: ".xlsx" });
           FileSaver.saveAs(data, file.name.slice(0, -4) + ".xlsx");
         } else {
-          console.log("No match found");
+          console.error(
+            "No match found. Does the file have d. Acţiuni and e. Obligatiuni"
+          );
         }
       })
       .catch((error) => console.error("Text extraction failed", error));
-  });
+  }
 }
 
 function PDFtoXLS() {
@@ -60,6 +63,7 @@ function PDFtoXLS() {
           type="file"
           accept="application/pdf"
           onChange={(event) => extractText(event)}
+          multiple
         />
       </header>
     </div>
