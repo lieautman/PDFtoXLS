@@ -1,6 +1,7 @@
 import pdfToText from "react-pdftotext";
 import * as FileSaver from "file-saver";
 import * as XLSX from "xlsx";
+import PDFtoXLSComponent from "./PDFtoXLSComponent";
 
 function extractText(event) {
   for (let i = 0; i < event.target.files.length; i++) {
@@ -55,19 +56,8 @@ function extractText(event) {
   }
 }
 
-function PDFtoXLS() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <input
-          type="file"
-          accept="application/pdf"
-          onChange={(event) => extractText(event)}
-          multiple
-        />
-      </header>
-    </div>
-  );
+function PDFtoXLSController() {
+  return <PDFtoXLSComponent extractText={extractText} />;
 }
 
-export default PDFtoXLS;
+export default PDFtoXLSController;

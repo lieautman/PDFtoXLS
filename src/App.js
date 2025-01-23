@@ -1,7 +1,7 @@
-import PDFtoXLS from "./PDFtoXLS/PDFtoXLS";
+import PDFtoXLSController from "./PDFtoXLS/PDFtoXLSController";
 
 function App() {
-  return <PDFtoXLS />;
+  return <PDFtoXLSController />;
 }
 
 export default App;
