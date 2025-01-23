@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PDFtoXLS/static/css/main.e6c13ad2.css",
+    "main.js": "/PDFtoXLS/static/js/main.e06ac2cc.js",
+    "index.html": "/PDFtoXLS/index.html",
+    "main.e6c13ad2.css.map": "/PDFtoXLS/static/css/main.e6c13ad2.css.map",
+    "main.e06ac2cc.js.map": "/PDFtoXLS/static/js/main.e06ac2cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e06ac2cc.js"
+  ]
+}
