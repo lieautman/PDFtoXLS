@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "http://lieautman.github.io/PDFtoXLS/static/css/main.e6c13ad2.css",
-    "main.js": "http://lieautman.github.io/PDFtoXLS/static/js/main.f51bf93a.js",
-    "index.html": "http://lieautman.github.io/PDFtoXLS/index.html",
-    "main.e6c13ad2.css.map": "http://lieautman.github.io/PDFtoXLS/static/css/main.e6c13ad2.css.map",
-    "main.f51bf93a.js.map": "http://lieautman.github.io/PDFtoXLS/static/js/main.f51bf93a.js.map"
+    "main.css": "https://lieautman.github.io/PDFtoXLS/static/css/main.e6c13ad2.css",
+    "main.js": "https://lieautman.github.io/PDFtoXLS/static/js/main.f51bf93a.js",
+    "index.html": "https://lieautman.github.io/PDFtoXLS/index.html",
+    "main.e6c13ad2.css.map": "https://lieautman.github.io/PDFtoXLS/static/css/main.e6c13ad2.css.map",
+    "main.f51bf93a.js.map": "https://lieautman.github.io/PDFtoXLS/static/js/main.f51bf93a.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
