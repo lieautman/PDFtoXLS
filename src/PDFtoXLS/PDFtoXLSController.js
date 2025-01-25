@@ -9,7 +9,8 @@ function extractText(event) {
     pdfToText(file)
       .then((text) => {
         //all text from PDF document
-        const match = text.match(/d\. Acţiuni(.*?)e\. Obligatiuni/);
+        console.log("ceva", text);
+        const match = text.match(/d. Ac.iuni(.*?)e. Obliga.iuni/);
         if (match) {
           //excel data
           const excelData = [];
@@ -56,7 +57,7 @@ function extractText(event) {
           FileSaver.saveAs(data, file.name.slice(0, -4) + ".xlsx");
         } else {
           console.error(
-            "No match found. Does the file have d. Acţiuni and e. Obligatiuni"
+            "No match found. Does the file have d. Acţiuni and e. Obligaţiuni"
           );
         }
       })
