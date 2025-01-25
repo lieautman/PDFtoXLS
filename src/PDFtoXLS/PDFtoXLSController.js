@@ -24,16 +24,24 @@ function extractText(event) {
           //salvez primele 2 valor
           const list = textDividedBySemicolumn.trim().split(";");
           excelData.push({
+            "Denumire emitent": "Total",
+            "ISIN activ": "Total",
+            "Simbol emitent": "",
             "Valoare actualizată lei": list.shift(),
-            "Pondere în activul total al fondului": list.shift()
+            "Pondere în activul total al fondului": list.shift(),
+            "Pret inchidere": "",
+            "Numar actiuni": ""
           });
           //salvez restul valorilor
           while (list.length > 0) {
             excelData.push({
               "Denumire emitent": list.shift(),
               "ISIN activ": list.shift(),
+              "Simbol emitent": "",
               "Valoare actualizată lei": list.shift(),
-              "Pondere în activul total al fondului": list.shift()
+              "Pondere în activul total al fondului": list.shift(),
+              "Pret inchidere": "",
+              "Numar actiuni": ""
             });
           }
           //console.log(excelData);
