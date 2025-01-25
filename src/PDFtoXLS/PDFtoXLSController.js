@@ -9,7 +9,6 @@ function extractText(event) {
     pdfToText(file)
       .then((text) => {
         //all text from PDF document
-        console.log("ceva", text);
         const match = text.match(/d. Ac.iuni(.*?)e. Obliga.iuni/);
         if (match) {
           //excel data
