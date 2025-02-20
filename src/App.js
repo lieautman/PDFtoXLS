@@ -1,7 +1,13 @@
 import PDFtoXLSController from "./PDFtoXLS/PDFtoXLSController";
+import SiteListComponent from "./SiteList/SiteListComponent";
 
 function App() {
-  return <PDFtoXLSController />;
+  return (
+    <>
+      <SiteListComponent />
+      <PDFtoXLSController />
+    </>
+  );
 }
 
 export default App;
