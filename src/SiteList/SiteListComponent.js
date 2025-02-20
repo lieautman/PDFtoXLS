@@ -10,8 +10,8 @@ function SiteListComponent() {
       }}
     >
       <h2>
-        Download the PDF for the pilon 2 data that you are interested in, from
-        the providers:
+        1. Download the PDF for the pilon 2 data that you are interested in,
+        from the providers:
       </h2>
       <a
         href={

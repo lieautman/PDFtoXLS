@@ -10,8 +10,8 @@ function PDFtoXLSComponent({ extractText }) {
       }}
     >
       <h1 style={{ padding: "50px" }}>
-        Upload one or more files with the specific format, downloaded from the
-        providers above.
+        2. Upload one or more files with the specific format, downloaded from
+        the providers above.
       </h1>
       <input
         type="file"
@@ -20,7 +20,7 @@ function PDFtoXLSComponent({ extractText }) {
         multiple
       />
       <h2 style={{ padding: "50px" }}>
-        The files downloaded have the data parsed into Excel format
+        3. The files downloaded have the data parsed into Excel format.
       </h2>
     </div>
   );
